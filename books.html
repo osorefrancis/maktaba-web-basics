@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" style="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Books - Maktaba</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./js/books.js" defer></script>
+  </head>
+
+  <body>
+    <header class="main-nav">
+      <h1>Maktaba</h1>
+
+      <nav
+        style="
+          display: flex;
+          justify-content: right;
+          align-items: center;
+          margin: 0;
+          padding: 30px;
+          gap: 10px;
+        "
+      >
+        <a href="home.html">Home</a>
+        <a href="books.html">Books</a>
+      </nav>
+    </header>
+
+    <main style="padding: 10px">
+      <div style="display: flex; justify-content: space-between">
+        <h2>Books</h2>
+
+        <a
+          href="./form.html"
+          style="
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: aquamarine;
+            height: 20px;
+            gap: 0.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            border: 1px solid black;
+          "
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              d="M12 4.5v15m7.5-7.5h-15"
+            />
+          </svg>
+
+          <span>New Book</span>
+        </a>
+      </div>
+
+      <div
+        id="main-row"
+        class="row"
+        style="
+          display: grid;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 1rem;
+        "
+      ></div>
+    </main>
+
+    <!-- <div class="column">
+        <img src="./images/ourfamily.jpg" alt="" style="width: 30%" />
+        <h3>Title</h3>
+        <div>Author</div>
+        <p>
+          Inspired by their journey together, Si King has completed this book as
+          <br />
+          a tribute to his best friend and cooking partner Dave Myers, <br />
+          and a celebration of the food they loved to cook for themselves
+          <br />and their families
+        </p>
+      </div>
+
+      <div class="column">
+        <img src="./images/dogs.jpg" alt="" style="width: 30%" />
+        <p style="display: flex; justify-content: center; align-items: center">
+          'A beautiful book' Greg James <br />There’s no love quite like that
+          between a dog and their human.
+        </p>
+      </div>
+
+      <div class="column">
+        <img src="./images/ally.jfif" alt="" style="width: 30%" />
+        <p>
+          Perhaps Scotland's best-known footballer, Ally McCoist MBE, <br />
+          has experienced highly successful careers as both as a player and
+          <br />
+          Ally began his playing career at St. Johnstone, playing there for a
+          while before moving to <br />
+        </p>
+      </div>
+    </div>
+
+    <div class="row" style="display: flex">
+      <div class="column">
+        <img src="./images/christmas.jfif" alt="" style="width: 20%" />
+        <p>
+          A solo holiday trip inspires one woman to rediscover her passion —and
+          remember that, <br />
+          sometimes, duets are more fun—in this romantic Christmas novel <br />
+          from #1 New York Times bestselling author Debbie Macomber. <br />
+        </p>
+      </div>
+
+      <div class="column">
+        <img src="./images/war.jfif" alt="" style="width: 30%" />
+        <p style="display: flex; justify-content: center; align-items: center">
+          Two-time Pulitzer Prize winner Bob Woodward tells the revelatory,
+          behind-the-scenes story of three wars—Ukraine, the Middle East and the
+          struggle for the American Presidency
+        </p>
+      </div>
+
+      <div class="column">
+        <img src="./images/brothers.jfif" alt="" style="width: 30%" />
+        <p>
+          In this intimate and open account – nothing like any rock-and-roll
+          memoir you’ve ever read – Alex Van Halen shares his personal story of
+          family, friendship, music and brotherly love in a remarkable tribute
+          to his beloved brother and band mate.
+        </p>
+      </div>
+    </div>
+
+    <div>
+      <div class="row" style="display: flex">
+        <div class="column">
+          <img src="./images/toxic.jfif" alt="" style="width: 30%" />
+          <p>
+            We are told that empathy is the highest virtue—the key to being a
+            good person. Is that true? Or has “empathy,” like so many other
+            words of our day—“tolerance,” “justice,” “acceptance”—been hijacked
+            by bad actors who exploit compassion for their own political ends?
+          </p>
+        </div>
+
+        <div class="column">
+          <img src="./images/girl.jfif" alt="" style="width: 30%" />
+          <p
+            style="display: flex; justify-content: center; align-items: center"
+          >
+            Discover how to harness the power of food to support your body’s
+            natural rhythms, empowering you to heal and thrive in this cookbook
+            based on the revolutionary international bestseller, Fast Like a
+            Girl.
+          </p>
+        </div>
+
+        <div class="column">
+          <img src="./images/john.jfif" alt="" style="width: 30%" />
+          <p>
+            Books are signed and numbered, with printed endpapers, foil
+            stamping, a cloth slipcase, and a ribbon marker. In John Grisham's
+            first work of nonfiction since The Innocent Man, "the master of the
+            legal thriller" (Associated Press) teams up with Jim McCloskey, "the
+            godfather of the innocence movement" (Texas Monthly), to share ten
+            harrowing true stories of wrongful convictions.
+          </p>
+        </div> -->
+
+    <!-- </div> -->
+
+    <script>
+      // var books = [
+      //   {
+      //     title: "Title",
+      //     author: "Author",
+      //     imgUrl: "./images/ourfamily.jpg",
+      //     description: `Inspired by their journey together, Si King has completed this book as
+      //     a tribute to his best friend and cooking partner Dave Myers,
+      //     and a celebration of the food they loved to cook for themselves
+      //     and their families`,
+      //   },
+      //   {
+      //     title: "Title",
+      //     author: "Author",
+      //     imgUrl: "./images/ourfamily.jpg",
+      //     description: ``,
+      //   },
+      //   {
+      //     title: "Title",
+      //     author: "Author",
+      //     imgUrl: "./images/ourfamily.jpg",
+      //     description: ``,
+      //   },
+      //   {
+      //     title: "Title",
+      //     author: "Author",
+      //     imgUrl: "./images/ourfamily.jpg",
+      //     description: ``,
+      //   },
+      //   {
+      //     title: "Title",
+      //     author: "Author",
+      //     imgUrl: "./images/ourfamily.jpg",
+      //     description: ``,
+      //   },
+      //   {
+      //     title: "Title",
+      //     author: "Author",
+      //     imgUrl: "./images/ourfamily.jpg",
+      //     description: ``,
+      //   },
+      //   {
+      //     title: "Title",
+      //     author: "Author",
+      //     imgUrl: "./images/ourfamily.jpg",
+      //     description: ``,
+      //   },
+      //   {
+      //     title: "Title",
+      //     author: "Author",
+      //     imgUrl: "./images/ourfamily.jpg",
+      //     description: ``,
+      //   },
+      //   {
+      //     title: "Title",
+      //     author: "Author",
+      //     imgUrl: "./images/ourfamily.jpg",
+      //     description: ``,
+      //   },
+      // ];
+
+      // const mainRow = document.querySelector("#main-row");
+
+      // function fetchJSONData() {
+      //   fetch("./books.json")
+      //     .then((res) => {
+      //       if (!res.ok) {
+      //         throw new Error(`HTTP error! Status: ${res.status}`);
+      //       }
+
+      //       return res.json();
+      //     })
+      //     .then((data) => {
+      //       // console.log(data);
+
+      //       for (let index = 0; index < data.length; index++) {
+      //         const book = data[index];
+
+      //         mainRow.innerHTML += `
+      //           <div style="display: flex; border: 1px solid #dedede;">
+      //             <img src="${book.imgUrl}" alt="" style="width: 30%; border-right: 1px solid #dedede;" />
+      //             <div style="padding: 0 10px">
+      //               <h4>${book.title}</h4>
+      //             <div>${book.author}</div>
+      //             <div>${book.published}</div>
+      //               </div>
+      //           </div>
+      //         `;
+      //       }
+      //     })
+      //     .catch((error) => console.error("Unable to fetch data:", error));
+      // }
+
+      // fetchJSONData();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Book - Maktaba</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="js/validator.js"></script>
+  </head>
+
+  <body>
+    <header class="main-nav">
+      <h1>Maktaba</h1>
+
+      <nav
+        style="
+          display: flex;
+          justify-content: right;
+          align-items: center;
+          margin: 0;
+          padding: 30px;
+          gap: 10px;
+        "
+      >
+        <a href="home.html">Home</a>
+        <a href="books.html">Books</a>
+      </nav>
+    </header>
+
+    <main>
+      <div id="notification-bar" class="hidden text-white"></div>
+
+      <div class="grid grid-cols-3 gap-2">
+        <form class="book-form">
+          <div class="input-group">
+            <label for="Image">Book Image</label>
+            <input
+              type="text"
+              id="image"
+              name="image"
+              placeholder="Book Image"
+            />
+            <span id="image-error" class="hide-error"></span>
+          </div>
+
+          <div class="input-group">
+            <label for="title">Book Title</label>
+            <input
+              type="text"
+              id="title"
+              name="title"
+              placeholder="Book Title"
+            />
+            <span id="title-error" class="hide-error"></span>
+          </div>
+
+          <div class="input-group">
+            <label for="author">Book Author</label>
+            <input
+              type="text"
+              id="author"
+              name="author"
+              placeholder="Book Author"
+            />
+            <span id="author-error" class="hide-error"></span>
+          </div>
+
+          <div class="input-group">
+            <label for="year">Year of Publication</label>
+            <input
+              type="text"
+              id="year"
+              name="year"
+              placeholder="Year of Publication"
+            />
+            <span id="year-error" class="hide-error"></span>
+          </div>
+
+          <div class="input-group">
+            <label for="description">Book Description</label>
+            <textarea
+              name="description"
+              id="description"
+              placeholder="Book Description"
+            ></textarea>
+            <span id="description-error" class="hide-error"></span>
+          </div>
+
+          <div>
+            <button type="button" onclick="onSubmit()">Save</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <script>
+      function onSubmit() {
+        osoreCheck(image.value, "Book Image", "#image-error");
+        osoreCheck(title.value, "Book Title", "#title-error");
+        osoreCheck(author.value, "Book Author", "#author-error");
+        osoreCheck(year.value, "Year of Publication", "#year-error");
+        osoreCheck(description.value, "Description", "#description-error");
+      }
+    </script>
+  </body>
+</html>
